@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Enter a number<input type="text" id="t1" /><br />
+    Enter a number<input type="text" id="t2" /><br />
+    Result <input type="text" id="t3" /><br />
+    <input type="button" value="Addition" onclick="addition()" />
+    <input type="button" value="Sub" onclick="sub()" />
+    <input type="button" value="Multiply" onclick="Multiply()" />
+    <input type="button" value="Div" onclick="Div()" />
+
+
+    <input type="button" value="Mod" onclick="Mod()" />
+
+
+
+
+    <input type="button" value="Square" onclick="Square()" />
+
+n
+
+
+
+    <script>
+        function addition() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sum = parseInt(a) + parseInt(b);
+            document.getElementById("t3").value = sum;
+        }
+        function sub() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sum = parseInt(a) - parseInt(b);
+            document.getElementById("t3").value = sum;
+        }
+        function Multiply() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sum = parseInt(a) * parseInt(b);
+            document.getElementById("t3").value = sum;
+        }
+        function Div() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sum = parseInt(a) / parseInt(b);
+            document.getElementById("t3").value = sum;
+        }
+
+        function Mod() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var sum = parseInt(a) % parseInt(b);
+            document.getElementById("t3").value = sum;
+        }
+
+        function Square() {
+            var a = document.getElementById("t1").value;
+            
+            var sum = parseInt(a) * parseInt(a);
+            document.getElementById("t3").value = sum;
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

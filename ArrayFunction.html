@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="div1"></div>
+    <script>
+        function Add(a, b) {
+            return a + b;
+        }
+
+        //arrow function ()=>{}
+        let addition = (a, b) => a + b;
+        var str = (name) => { return "Hello" + name };
+        function test() {
+            return "Hello to all";
+        }
+        var test = (a, b) => {
+            var m = a * b;
+            return m;
+        }
+        var emp = {
+            id: 1, 
+            name: "user1"  ,
+            salary: 34000,
+            print: function () {
+                return "Emp Details" + this.id + " " + this.name + " " + this.salary;
+            },
+            print1: () => {
+                return "Emp details " + emp.id + " " + emp.name + " " + emp.salary;
+            }
+        }
+        console.log(emp.print1());
+        console.log(test(20, 40));
+
+
+
+
+
+    </script>
+    <script>
+
+        var fruits = { apple: 200, orange: 250, banana: 100 };
+
+        var text = "";
+        for (let [key, value] of Object.entries(fruits)) {
+
+            text += key + " " + value + "<br/>";
+        }
+        document.getElementById("div1").innerHTML = text;
+    </script>
+
+    <script>
+        var person = {
+            print: function (city, country) {
+                return this.firstname + " " + this.lastname + " " + city + " " + country;
+            }
+        }
+        var emp = {
+            firstname: "fname",
+            lastname: "lname",
+        }
+        var customer = {
+            firstname: "cfname",
+            lastname: "clname ",
+        }
+        console.log(person.print.call(emp));
+        console.log(person.print.call(customer));
+        console.log(person.print.call(emp, "Pune", "India"));
+        console.log(person.print.apply(emp, ["Pune", "India"]));
+        console.log(person.print.bind(customer));
+
+
+
+
+
+
+    </script>
+    <script>
+        function Add(a, b, mycallbackfunc) {
+            var sum = a + b;
+            mycallbackfunc(sum);
+
+        }
+        Add(10, 20, display);
+        function display(result) {
+
+        
+           document.getElementById("div1").innerHTML = result;
+        }
+    </script>
+    <script>
+        function display() {
+            document.getElementById("div1").innerHTML = "Hello to all";
+
+        }
+        display();
+        setTimeout(display, 5000);
+       // setHoursTime(display ,10000);
+        setInterval(display, 10000);
+
+    </script>
+
+    <script>
+        function showTime() {
+            let d = new Date();
+
+            let res = d.getHours() + " :" + d.getMinutes() + " :" + d.getSeconds();
+            document.getElementById("div1").innerHTML = res;
+        }
+
+        showTime();
+
+        setInterval(showTime, 10000);
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

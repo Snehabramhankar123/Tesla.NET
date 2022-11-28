@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        for (var i = 0; i <= 10; i++) {
+            console.log(i);
+        }
+        function Add() {
+            var a = 10, b = 20;
+            var c = a + b;
+            console.log(c);
+        }
+        function AcceptDetails(rollno, name, per) {
+            //console.log(rollno + " " + name + " " + per);
+            var rollno = 1;
+            var name = "Sneha";
+            var per = 88.099;
+        }
+        console.log("c");
+        //3. with parameters & return type
+        function Multiply(a, b) {
+            var a = 10, b = 20;
+            var res = a * b;
+            return res;
+            //console.log(res);
+        }
+        //call the function
+        Add();
+        AcceptDetails(1, "Sneha", 88.99);
+        var m = Multiply(10, 20);
+        console.log(m);
+    </script>
+    <script>
+        // modal dialog box in javascript
+        // alert  , confirm
+
+        var res = confirm("do you want to process for payment ?");
+        if (res == true) {
+            // code goes here...
+            alert("Success !");
+        }
+        else {
+            alert("You cancelled the payment");
+        }
+    </script>
+    <script>
+        "use strict"
+        var a = 10;
+        console.log(a);
+    </script>
+
+
+
+</body>
+</html >

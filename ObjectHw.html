@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var Student = {
+            rollno: 1 ,
+            name: "Sneha" ,
+            Sub: 56,
+            Sub1: 89,
+            Sub2: 90,
+            print: function () {
+                return "Student Details" + this.rollno + " "
+                    + this.name + " " + this.Sub + " " + this.Sub1 + " " + this.Sub2;
+            },
+        }
+        Total_Marks: function () {
+
+            var total = this.subject1 + this.subject2 + this.subject3;
+
+            this.total = this.subject1 + this.subject2 + this.subject3;
+
+            return this.total;
+
+
+        }
+
+        Student_Percentage: function() {
+
+            return Percentage;
+            this.Percentage = this.total / 3;
+
+            
+        }
+
+
+        console.log(student.print());
+        console.log(student.Total_Marks());
+        console.log(student.Student_Percentage());
+    </script>
+
+
+    <script>
+        var product = {
+            pid: 1,
+            pname: "Biscuit",
+            price: 50,
+
+            print: function () {
+                return "Product Details " + this.pid + " " + this.pname + "  " + this.price;
+            },
+
+            Discounted_Price: function () {
+
+                this.price = this.price - (this.price * 10 / 100);
+                return this.price;
+            }
+        };
+
+        console.log(product.print());
+        console.log(product.Discounted_Price());
+    </script>
+  <script>
+
+    var product =
+    [
+    {
+    pid: 1,
+    pname: "Biscuit" ,
+    price: 50
+    },
+    {
+    pid: 2,
+    pname: "Fogg",
+    price: 550
+    },
+    {
+    pid: 3,
+    pname: "Toothbrush",
+    price: 50
+    },
+    {
+    pid: 4,
+    pname: "Dairy Milk Chocolate",
+    price: 500
+    }
+    ]
+    console.log(product);
+
+    
+
+      var data = "<table border='1'><tr><th>pid</th><th>pname</th><th>price</th></tr>";
+      for (var i = 0; i < product.length; i++) {
+          data += "<tr><td>" + product[i].pid + "</td><td>" + product[i].pname + "</td><td>" +
+              product[i].price + "</td></tr>";
+      }
+      data += "</table>";
+
+
+
+
+
+  </script>
+
+
+
+
+</body>
+</html>
